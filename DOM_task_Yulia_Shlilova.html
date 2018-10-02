@@ -11,6 +11,14 @@
     <img class="view-icon" onclick="onListClick()" src="images/list-view.png" title="Переключить вид на список" alt="Переключить на список" width="32" height="32">
   </div>
   <div class="block-view" id="pizzasBlockContainer">
+    <template>
+      <figure class="pizza-card">
+        <span class="pizza-name"></span>
+        <span class="ingridients"></span>
+        <span class="calories"></span>
+        <span class="price"></span>
+      </figure>
+    </template>
   </div>
   <ul class="list-view" id="pizzasListContainer">
   </ul>
