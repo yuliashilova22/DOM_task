@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пицца из Trattoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="view">
+    <img class="view-icon" onclick="onBlockClick()" src="images/block-view.png" title="Переключить вид на блоки" alt="Переключить на блоки" width="32" height="32">
+    <img class="view-icon" onclick="onListClick()" src="images/list-view.png" title="Переключить вид на список" alt="Переключить на список" width="32" height="32">
+  </div>
+  <div class="block-view" id="pizzasBlockContainer">
+  </div>
+  <ul class="list-view" id="pizzasListContainer">
+  </ul>
+  <script src="script.js"></script>
+</body>
+</html>
