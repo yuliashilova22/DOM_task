@@ -7,21 +7,25 @@
 </head>
 <body>
   <div class="view">
-    <img class="view-icon" onclick="onBlockClick()" src="images/block-view.png" title="Переключить вид на блоки" alt="Переключить на блоки" width="32" height="32">
-    <img class="view-icon" onclick="onListClick()" src="images/list-view.png" title="Переключить вид на список" alt="Переключить на список" width="32" height="32">
+    <img class="view-icon block-icon" src="images/block-view.png" title="Переключить вид на блоки" alt="Переключить на блоки" width="32" height="32">
+    <img class="view-icon list-icon" src="images/list-view.png" title="Переключить вид на список" alt="Переключить на список" width="32" height="32">
+    <input type="button" class="calories-sort" value="Сортировать по возрастанию калорий">
+    <input type="button" class="price-sort" value="Сортировать по возрастанию цены">
+    <input type="text" class="filter-input" placeholder="Введите ингридиент">
+    <input type="button" class="filter-button" value="Фильтровать по ингридиенту">
   </div>
   <div class="block-view" id="pizzasBlockContainer">
     <template>
       <figure class="pizza-card">
+        <img class="pizza-pic" width="300" height="300">
         <span class="pizza-name"></span>
         <span class="ingridients"></span>
+        <input type="button" class="change-ingridients" value="Изменить состав">
         <span class="calories"></span>
         <span class="price"></span>
       </figure>
     </template>
   </div>
-  <ul class="list-view" id="pizzasListContainer">
-  </ul>
   <script src="script.js"></script>
 </body>
 </html>

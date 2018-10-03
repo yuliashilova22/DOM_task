@@ -16,11 +16,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 1100px;
+  max-width: 1200px;
   padding: 20px 0 10px;
 }
 
-figure {
+.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.pizza-card {
   display: flex;
   flex-direction: column;
   border: 2px solid green;
@@ -29,9 +34,7 @@ figure {
   margin-bottom: 10px;
 }
 
-.pizza-pic {
-  margin-bottom: 20px;
-}
+.pizza-pic { margin-bottom: 20px; }
 
 .pizza-name {
   text-align: center;
@@ -41,18 +44,21 @@ figure {
 }
 
 .ingridients,
-.calories {
-  margin-bottom: 7px;
-}
+.calories { margin-bottom: 7px; }
 
 .price { 
   font-weight: bold;
   color: red; 
 }
 
-.list-view { 
-  display: none;
-  list-style: none; 
+.calories-sort,
+.price-sort,
+.filter {
+  height: 32px;
+  background-color: #c82e2e;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 .list-view__item {
@@ -75,7 +81,23 @@ figure {
 
 .pizza-general-info { display: inline-block; }
 
-.view-icon {
+.view-icon,
+.calories-sort,
+.price-sort,
+.filter {
   cursor: pointer;
   margin: 5px;
+}
+
+.view {
+  display: flex;
+  justify-content: space-around;
+}
+
+.change-ingridients {
+  height: 20px;
+  padding: 2px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
 }
